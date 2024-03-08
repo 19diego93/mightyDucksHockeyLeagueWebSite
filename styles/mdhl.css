@@ -1,5 +1,180 @@
+:root {
+  --lightgrey: #f1efef;
+  --mediumgrey: #ccc8aa;
+  --grey: #7d7c7c;
+  --black: #191717;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Sans-serif, Verdana, Tahoma;
+  text-decoration: none;
+  /*outline: 1px solid red;*/
+}
+body {
+  padding: 0rem 4rem 0rem 4rem;
+  background-color: var(--mediumgrey);
+}
+/**Top main heather*/
+.topWebHeader {
+  width: 100%;
+  min-height: 20vh;
+  margin-top: 3rem;
+}
+
+.topWebHeader h1,
+nav {
+  display: inline-block;
+}
+.h1Title {
+  text-align: center;
+  width: 55%;
+  font-size: 2rem;
+  padding: 5px;
+  text-shadow: var(--lightgrey) 4px 3px 3px;
+}
+.navTopBar a,
+.footerNav a {
+  background-color: var(--black);
+  color: var(--lightgrey);
+  font-size: 0.8rem;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: var(--grey) 3px 3px 5px;
+}
+.navTopBar a {
+  display: inline-block;
+  font-weight: 400;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  margin: 0px 5px 0px 5px;
+}
+
+.bannerContainer {
+  display: block;
+  object-fit: cover;
+  height: 250px;
+}
+
+.bannerTopHeader {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+/* Main*/
+main {
+  min-height: 65vh;
+}
+
+.eventTitleContainer {
+  display: block;
+  border: 3px solid black;
+  text-align: center;
+  background-color: var(--black);
+}
+.eventTitle {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: var(--lightgrey);
+}
+.figureA,
+.divContainer {
+  display: inline-block;
+  margin-top: 30px;
+}
+.figureA {
+  width: 25%;
+  vertical-align: top;
+  max-width: 200px;
+}
+.figureA img {
+  object-fit: fill;
+  width: 80%;
+}
+.divContainer {
+  width: 70%;
+}
+.divContainer p {
+  padding-top: 2.5px;
+  padding-left: 20px;
+  font-size: 0.9rem;
+}
+.boxsContainer,
+.containerPhotos,
+.figureB img {
+  border-radius: 7px;
+}
+.boxsContainer {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: var(--lightgrey);
+}
+.containerPhotos {
+  margin-top: 5rem;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--lightgrey);
+}
+.figureB {
+  display: inline-block;
+  padding: 10px;
+  width: 25%;
+}
+.figureB img {
+  box-shadow: -2px 10px 20px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  object-fit: fill;
+}
+/* Footer*/
+footer {
+  margin-top: 40px;
+  padding: 10px;
+  min-height: 15vh;
+  background-color: var(--blue);
+  text-align: center;
+}
+.footerNav a,
+footer p {
+  padding: 10px;
+}
+.footerNav a {
+  margin: 5px;
+}
+footer p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: var(--black);
+}
+
+/* effects */
+a[href="#"] {
+  background-color: var(--lightgrey);
+  color: var(--black);
+}
+a[href="#top"] {
+  background-color: var(--lightgrey);
+  color: var(--black);
+}
+a:hover {
+  background-color: lightblue;
+  color: var(--black);
+}
+
+
+#contact:hover {
+  background-color: var(--black);
+  color: var(--mediumgrey);
+}
+#contact,.navTopBar a,.footerNav a{
+  transition: background-color 0.5s;
+}
+.figureB{
+  transition: all .6s;
+}
+.figureB:hover{
+  transform: scale(1.5)
 }
