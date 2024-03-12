@@ -3,6 +3,10 @@
   --mediumgrey: #ccc8aa;
   --grey: #7d7c7c;
   --black: #191717;
+  --lightcream: #f6f1e9;
+  --cream: #ffd93d;
+  --orange: #ff8400;
+  --redorange: #4f200d;
 }
 * {
   margin: 0;
@@ -10,7 +14,7 @@
   box-sizing: border-box;
   font-family: Sans-serif, Verdana, Tahoma;
   text-decoration: none;
-  /*outline: 1px solid red;*/
+  /* outline: 1px solid red; */
 }
 body {
   padding: 0rem 4rem 0rem 4rem;
@@ -18,18 +22,15 @@ body {
 }
 /**Top main heather*/
 .topWebHeader {
-  width: 100%;
   min-height: 20vh;
   margin-top: 3rem;
-}
-
-.topWebHeader h1,
-nav {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .h1Title {
   text-align: center;
-  width: 55%;
+  width: 60%;
   font-size: 2rem;
   padding: 5px;
   text-shadow: var(--lightgrey) 4px 3px 3px;
@@ -48,12 +49,11 @@ nav {
   font-weight: 400;
   position: relative;
   top: 20px;
-  left: 20px;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 5px;  
 }
-
+/* banner image top */
 .bannerContainer {
-  display: block;
+ width: 100%;
   object-fit: cover;
   height: 250px;
 }
@@ -68,9 +68,13 @@ nav {
 main {
   min-height: 65vh;
 }
-
+.cardsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .eventTitleContainer {
-  display: block;
+  width: 100%;
   border: 3px solid black;
   text-align: center;
   background-color: var(--black);
@@ -82,20 +86,20 @@ main {
 }
 .figureA,
 .divContainer {
-  display: inline-block;
-  margin-top: 30px;
+ margin-top: 30px;
 }
 .figureA {
   width: 25%;
-  vertical-align: top;
   max-width: 200px;
 }
 .figureA img {
-  object-fit: fill;
-  width: 80%;
+  width: 100%;
 }
 .divContainer {
-  width: 70%;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .divContainer p {
   padding-top: 2.5px;
@@ -108,19 +112,121 @@ main {
   border-radius: 7px;
 }
 .boxsContainer {
+  width: 100%;
   margin-top: 10px;
   padding: 20px;
   background-color: var(--lightgrey);
+  box-shadow: -2px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
+.boxsContainer > article {
+  margin: 15px 0px;
+}
+.boxsContainer h3 {
+  padding: 1rem;
+  text-align: center;
+}
+/* contact page */
+.contactMDHL{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.contactMDHL p{
+  padding: 0px 0px 0px 5px;
+}
+/* list page*/
+.sportsmanship {
+  list-style-type: none;
+}
+.fieldsUsed {
+  list-style: lower-alpha;
+}
+.fieldsUsed li {
+  margin-inline: 20px 0px;
+}
+ol,
+ul,
+.fieldsUsed {
+  list-style-position: inside;
+}
+li {
+  margin-top: 10px;
+}
+.highlighted {
+  font-weight: bold;
+}
+.highlighted,
+li,
+p {
+  font-size: 0.9rem;
+}
+
+.all-play {
+  list-style-type: circle;
+  margin-inline: 30px 0px;
+}
+
+/* table page*/
+.tableContainer {
+  display: flex;
+  justify-content: center;
+}
+table {
+  padding: 20px 0px;
+}
+th {
+  padding: 10px 0px;
+}
+td {
+  text-align: end;
+  padding: 0px 10px;
+  font-size: 0.9rem;
+}
+.tableInfo article {
+  padding: 0px 1rem;
+}
+.informationPlace,
+.infoCoordinator,
+.infoContact,
+.infoPhone,
+.infoEmail {
+  display: flex;
+  flex-wrap: wrap;
+}
+.infoContact {
+  justify-content:space-evenly;
+}
+.infoEmail{
+  align-self: center;
+}
+.informationPlace p,
+.infoCoordinator p,
+.infoContact p {
+  padding: 0px 0px 0px 5px;
+}
+.additionalInfo,
+.contactInfoContainer div {
+  padding: 10px 0px;
+}
+
+/*Photo bottom section*/
 .containerPhotos {
   margin-top: 5rem;
-  width: 100%;
-  padding: 20px;
+  
+  padding: 10px;
   text-align: center;
-  background-color: var(--lightgrey);
+  background-color: rgba(216, 192, 114, 0.733);
+  box-shadow: -3px 5px 20px 0px 
+  rgba(255, 166, 0, 0.534);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 .figureB {
-  display: inline-block;
+  
   padding: 10px;
   width: 25%;
 }
@@ -164,17 +270,18 @@ a:hover {
   color: var(--black);
 }
 
-
 #contact:hover {
   background-color: var(--black);
   color: var(--mediumgrey);
 }
-#contact,.navTopBar a,.footerNav a{
+#contact,
+.navTopBar a,
+.footerNav a {
   transition: background-color 0.5s;
 }
-.figureB{
-  transition: all .6s;
+.figureB {
+  transition: all 0.6s;
 }
-.figureB:hover{
-  transform: scale(1.5)
+.figureB:hover {
+  transform: scale(1.5);
 }
