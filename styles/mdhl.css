@@ -388,7 +388,7 @@ button {
   height: 20px;
 }
 .frameMap {
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   height: 30%;
 }
@@ -495,9 +495,10 @@ button:hover {
   border-radius: 7px;
 }
 .frameMap:hover {
-  height: 200px;
+  height: 220px;
   padding: 10px;
   background-color: var(--orange);
+  border-radius: 7px;
 }
 .mapContainer:hover {
   margin-bottom: 250px;
