@@ -125,6 +125,43 @@ main {
   padding: 1rem;
   text-align: center;
 }
+
+/* Schedule game info page */
+.scheduleTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: -2px 2px 2px var(--cream);
+}
+/* left container game info */
+
+.leftBar {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.leftBar figure {
+  width: 100%;
+}
+.leftBar article {
+  padding: 20px 0px;
+}
+.lBarTitle {
+  display: none;
+}
+.leftBar h4 {
+  padding: 7px;
+  font-size: 1.4rem;
+  text-shadow: -2px 2px 2px var(--orange);
+}
+.leftBar iframe {
+  border-radius: 7px;
+  box-shadow: -2px 2px 5px var(--black);
+}
+
 /* contact page */
 .contactMDHL {
   display: flex;
@@ -136,7 +173,7 @@ main {
 .contactMDHL p {
   padding: 0px 0px 0px 5px;
 }
-/* list page*/
+/* Rules list page*/
 .sportsmanship {
   list-style-type: none;
 }
@@ -168,7 +205,7 @@ p {
   margin-inline: 30px 0px;
 }
 
-/* table page*/
+/*Games info table page*/
 .tableContainer {
   display: flex;
   justify-content: center;
@@ -200,6 +237,10 @@ td {
 }
 .infoEmail {
   align-self: center;
+}
+.infoPhone a,
+.infoEmail a {
+  transition: all 0.6s;
 }
 .informationPlace p,
 .infoCoordinator p,
@@ -258,8 +299,9 @@ input {
 select {
   text-align: center;
   box-shadow: 2px 2px 2px -2px var(--black);
+  padding: 4px 0px;
 }
-.radioOn{
+.radioOn {
   transition: all 0.6s;
 }
 .birthDate {
@@ -298,6 +340,11 @@ select {
   width: 55%;
 }
 
+/* Closest school form */
+.closestS select {
+  margin-left: 10px;
+}
+
 /* Position player// Uniform form */
 .playerPosition label,
 .uniformSize label {
@@ -312,17 +359,47 @@ select {
   margin-right: 20px;
 }
 /* Button submit */
-button{
+button {
   width: 130px;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 40px;
-transition: all 0.6s;
+  transition: all 0.6s;
 }
+select,
+button {
+  cursor: pointer;
+}
+
+/* Direction maps  */
+
+.directions {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.directions h5 {
+  align-self: flex-start;
+}
+.mapContainer {
+  height: 20px;
+}
+.frameMap {
+  padding: 20px;
+  width: 100%;
+  height: 30%;
+}
+.mapContainer,
+.frameMap {
+  transition: all 0.6s;
+}
+
 /*Photo bottom section*/
 .containerPhotos {
   margin-top: 5rem;
-
   padding: 10px;
   text-align: center;
   background-color: rgba(216, 192, 114, 0.733);
@@ -331,6 +408,7 @@ transition: all 0.6s;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  width: 70%;
 }
 .figureB {
   padding: 10px;
@@ -371,18 +449,21 @@ a[href="#top"] {
   background-color: var(--lightgrey);
   color: var(--black);
 }
-a:hover {
+.navA a:hover {
   background-color: lightblue;
   color: var(--black);
 }
-
+.footA a:hover {
+  background-color: lightblue;
+  color: var(--black);
+}
 #contact:hover {
   background-color: var(--black);
   color: var(--mediumgrey);
 }
 #contact,
-.navTopBar a,
-.footerNav a {
+.navA a,
+.footA a {
   transition: background-color 0.5s;
 }
 .figureB {
@@ -400,14 +481,43 @@ select:hover {
   color: var(--black);
 }
 button:hover {
-  background-color:var(--orange);
+  background-color: var(--orange);
   color: var(--lightcream);
   border-radius: 10px;
   font-size: 1.5rem;
+  width: 150px;
+  padding: 20px;
+  font-weight: 700;
 }
 .radioOn:hover {
   background-color: var(--orange);
   color: var(--black);
   border-radius: 7px;
-
+}
+.frameMap:hover {
+  height: 200px;
+  padding: 10px;
+  background-color: var(--orange);
+}
+.mapContainer:hover {
+  margin-bottom: 250px;
+  background-color: var(--cream);
+  border-radius: 10px;
+}
+.infoPhone a:hover {
+  background-color: lightblue;
+  border-radius: 7px;
+  color: var(--redorange);
+  padding: 0px 7px;
+  font-weight: 700;
+}
+.infoEmail a:hover {
+  background-color: lightblue;
+  border-radius: 7px;
+  color: var(--redorange);
+  padding: 0px 7px;
+  font-weight: 700;
+}
+tr:hover {
+  background-color: var(--cream);
 }

@@ -13,12 +13,12 @@
 <body>
     <header id="top" class="topWebHeader">
         <h1 class=" h1Title">Mighty Ducks Hockey League</h1>
-        <nav class="navTopBar">
+        <nav class="navTopBar navA">
             <a href="../index.html">Home</a>
             <a href="./aboutMDHL.html">About MDHL</a>
             <a href="./contact.html">contact</a>
             <a href="./rules.html">Rules</a>
-            <a href="./game_info.html">Info</a>
+            <a href="./game_info.html">Games info</a>
             <a href="#">Registration</a>
         </nav>
         <figure class="bannerContainer">
@@ -55,32 +55,33 @@
                         </div>
                         <div class="blockForm">
                             <label class="city">City:<input class="notRadio" type="text" name="city"></label>
-                            <label class="zipCode">Zip Code:<input class="notRadio" type="number" name="zipCode"
-                                    minlength="4" maxlength="10"></label>
+                            <label class="zipCode">Zip Code:<input class="notRadio" type="number"
+                                    name="zipCode"></label>
                         </div>
                         <div class="blockForm">
-                            <label class="birthDate">Birth Date: <input class="notRadio" type="date" name="birthDate"></label>
+                            <label class="birthDate">Birth Date: <input class="notRadio" type="date"
+                                    name="birthDate"></label>
                             <div class="genderBlock">
                                 <p>Gender: </p>
-                                <label class="radioOn"> Female <input type="radio"  name="gender" value="female"></label>
-                                <label class="radioOn"> Male <input type="radio"  name="gender" value="male"></label>
-                                <label class="radioOn"> Other <input type="radio"  name="gender" value="other"></label>
+                                <label class="radioOn"> Female <input type="radio" name="gender" value="female"></label>
+                                <label class="radioOn"> Male <input type="radio" name="gender" value="male"></label>
+                                <label class="radioOn"> Other <input type="radio" name="gender" value="other"></label>
                             </div>
                         </div>
                         <div class="gradeForm blockForm">
                             <p>Grade: </p>
-                            <label class="radioOn"><input type="radio"  value="preSchool" name="grade">Pre-School</label>
-                            <label class="radioOn"><input type="radio"  name="grade" value="first">1th</label>
-                            <label class="radioOn"> <input type="radio"  name="grade" value="second">2nd</label>
-                            <label class="radioOn"><input type="radio"  name="grade" value="third">3rd</label>
-                            <label class="radioOn"><input type="radio"  name="grade" value="fourth">4th</label>
-                            <label class="radioOn"> <input type="radio"  name="grade" value="fifth">5th</label>
+                            <label class="radioOn"><input type="radio" value="preSchool" name="grade">Pre-School</label>
+                            <label class="radioOn"><input type="radio" name="grade" value="first">1th</label>
+                            <label class="radioOn"> <input type="radio" name="grade" value="second">2nd</label>
+                            <label class="radioOn"><input type="radio" name="grade" value="third">3rd</label>
+                            <label class="radioOn"><input type="radio" name="grade" value="fourth">4th</label>
+                            <label class="radioOn"> <input type="radio" name="grade" value="fifth">5th</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>Wich elementary school do you live near?</legend>
-                        <label class="blockForm">Closest School: <select name="school">
-                                <option value="" disabled>--choose one option--</option>
+                        <label class="blockForm closestS">Closest School: <select name="school">
+                                <option value="" disabled selected>--choose one option--</option>
                                 <option value="greenbay">Greenbay</option>
                                 <option value="ahowardAYeager">Howard A Yeager</option>
                                 <option value="marjoriePHart">Marjorie P Hart</option>
@@ -92,41 +93,56 @@
                     <fieldset>
                         <legend>What position(s) do you normally play? (check all that apply)</legend>
                         <div class="blockForm playerPosition">
-                            <label class="radioOn"><input type="checkbox" class="notRadio" name="position" value="forward"> Forward</label>
-                        <label class="radioOn"><input type="checkbox" class="notRadio" name="position" value="defense"> Defense</label>
-                        <label class="radioOn"><input type="checkbox" class="notRadio" name="position" value="midfield"> Midfield</label>
-                        <label class="radioOn"><input type="checkbox" class="notRadio" name="position" value="goalkeeper"> Goalkeeper</label>
-                    </div>
+                            <label class="radioOn"><input type="checkbox" class="notRadio" name="position"
+                                    value="forward"> Forward</label>
+                            <label class="radioOn"><input type="checkbox" class="notRadio" name="position"
+                                    value="defense"> Defense</label>
+                            <label class="radioOn"><input type="checkbox" class="notRadio" name="position"
+                                    value="midfield"> Midfield</label>
+                            <label class="radioOn"><input type="checkbox" class="notRadio" name="position"
+                                    value="goalkeeper"> Goalkeeper</label>
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>Uniform Size: </legend>
                         <div class="blockForm uniformSize">
-                        <label class="radioOn"><input type="radio"  name="uniformSize" value="youthSmall"> Youth Small</label>
-                        <label class="radioOn"><input type="radio"  name="uniformSize" value="youthMedium"> Youth Medium</label>
-                        <label class="radioOn"><input type="radio"  name="uniformSize" value="youthLarge"> Youth Large</label>
-                        <label class="radioOn"><input type="radio"  name="uniformSize" value="small"> Small</label>
-                        <label class="radioOn"><input type="radio"  name="uniformSize" value="medium"> Medium</label>
-                        <label class="radioOn"><input type="radio"  name="uniformSize" value="large"> Large</label>
-                        <label class="radioOn"><input type="radio"  name="uniformSize" value="extraLarge"> Extra-Large</label>
-                    </div>
+                            <label class="radioOn"><input type="radio" name="uniformSize" value="youthSmall"> Youth
+                                Small</label>
+                            <label class="radioOn"><input type="radio" name="uniformSize" value="youthMedium"> Youth
+                                Medium</label>
+                            <label class="radioOn"><input type="radio" name="uniformSize" value="youthLarge"> Youth
+                                Large</label>
+                            <label class="radioOn"><input type="radio" name="uniformSize" value="small"> Small</label>
+                            <label class="radioOn"><input type="radio" name="uniformSize" value="medium"> Medium</label>
+                            <label class="radioOn"><input type="radio" name="uniformSize" value="large"> Large</label>
+                            <label class="radioOn"><input type="radio" name="uniformSize" value="extraLarge">
+                                Extra-Large</label>
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>Permission to Play</legend>
                         <div class="blockForm permissionPlay">
-                        <p>I, the parent or guardian fo the minor registrant, agree that the registrant and I will abide
-                            by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of
-                            physical injury associated with hockey and in consideration for the "League" accepting the
-                            registrant for its hockey programs and activities, I hereby release, discharge, and/or
-                            otherwise indemnify MDHL, their employees and associated personnel and volunteers, including
-                            the facilities used for practices and games, against any claim by on on behalf of the
-                            registrant as a result of the registrant's participation in the programand/or being
-                            transported to or from MDHL sponsored activities, wich transportation. By entering your name below, I
-                            here by agree and authorize the above. In addition, by entering your name below, I also acknowledge
-                            that I have read the cancellation policy and agree to its terms. </p>
+                            <p>I, the parent or guardian fo the minor registrant, agree that the registrant and I will
+                                abide
+                                by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the
+                                possibility of
+                                physical injury associated with hockey and in consideration for the "League" accepting
+                                the
+                                registrant for its hockey programs and activities, I hereby release, discharge, and/or
+                                otherwise indemnify MDHL, their employees and associated personnel and volunteers,
+                                including
+                                the facilities used for practices and games, against any claim by on on behalf of the
+                                registrant as a result of the registrant's participation in the programand/or being
+                                transported to or from MDHL sponsored activities, wich transportation. By entering your
+                                name below, I
+                                here by agree and authorize the above. In addition, by entering your name below, I also
+                                acknowledge
+                                that I have read the cancellation policy and agree to its terms. </p>
 
-                        <label>Parent/Guardian signature: <input class="notRadio" type="text" name="signature"></label>
-                        <label>Date: <input type="date" class="notRadio" name="signatureDate"></label>
-                    </div>
+                            <label>Parent/Guardian signature: <input class="notRadio" type="text"
+                                    name="signature"></label>
+                            <label>Date: <input type="date" class="notRadio" name="signatureDate"></label>
+                        </div>
                     </fieldset>
                     <button class="notRadio">Submit</button>
                 </form>
@@ -134,7 +150,7 @@
 
             <div class="containerPhotos">
                 <figure class="figureB">
-                    <img src="../assets/img/hockey2.jpg" width="300"
+                    <img src="../assets/img/hockey2.jpg" 
                         alt="hockey player iceskating preparing to hit the puck">
                 </figure>
                 <figure class="figureB">
@@ -150,12 +166,12 @@
     </main>
 
     <footer>
-        <div class="footerNav">
+        <div class="footerNav footA">
             <a href="../index.html">Home</a>
             <a href="./aboutMDHL.html">About MDHL</a>
             <a href="./contact.html">contact</a>
             <a href="./rules.html">Rules</a>
-            <a href="./game_info.html">Info</a>
+            <a href="./game_info.html">Games info</a>
             <a href="#top">Registration</a>
         </div>
         <p>Mighty Ducks Hockey League 2024</p>
