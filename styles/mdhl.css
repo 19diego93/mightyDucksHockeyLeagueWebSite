@@ -5,7 +5,7 @@
   --black: #191717;
   --lightcream: #f6f1e9;
   --cream: #ffd93d;
-  --orange: #ff8400;
+  --orange: #ff840098;
   --redorange: #4f200d;
 }
 * {
@@ -49,11 +49,11 @@ body {
   font-weight: 400;
   position: relative;
   top: 20px;
-  margin: 0px 5px;  
+  margin: 0px 5px;
 }
 /* banner image top */
 .bannerContainer {
- width: 100%;
+  width: 100%;
   object-fit: cover;
   height: 250px;
 }
@@ -86,7 +86,7 @@ main {
 }
 .figureA,
 .divContainer {
- margin-top: 30px;
+  margin-top: 30px;
 }
 .figureA {
   width: 25%;
@@ -126,14 +126,14 @@ main {
   text-align: center;
 }
 /* contact page */
-.contactMDHL{
+.contactMDHL {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
 }
-.contactMDHL p{
+.contactMDHL p {
   padding: 0px 0px 0px 5px;
 }
 /* list page*/
@@ -196,9 +196,9 @@ td {
   flex-wrap: wrap;
 }
 .infoContact {
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
-.infoEmail{
+.infoEmail {
   align-self: center;
 }
 .informationPlace p,
@@ -210,23 +210,129 @@ td {
 .contactInfoContainer div {
   padding: 10px 0px;
 }
+/*Form player registration */
+.registrationTitle {
+  font-size: 1.5rem;
+  padding: 10px;
+  text-shadow: -2px 0px 2px var(--cream);
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+fieldset {
+  padding: 1.2rem;
+  margin: 15px 0px;
+  max-width: 700px;
+  width: 100%;
+}
+legend {
+  padding: 5px;
+  background-color: var(--lightcream);
+}
 
+.blockForm {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.blockForm label,
+.blockForm p {
+  padding: 5px;
+}
+.gradeBlock label {
+  justify-content: space-around;
+}
+legend,
+select,
+input {
+  border-radius: 5px;
+  border: 0.5px solid var(--grey);
+  transition: all 0.6s;
+}
+.notRadio,
+select {
+  text-align: center;
+  box-shadow: 2px 2px 2px -2px var(--black);
+}
+.radioOn{
+  transition: all 0.6s;
+}
+.birthDate {
+  margin-right: 30px;
+}
+.gradeForm,
+.genderBlock {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.gradeForm p,
+.genderBlock p {
+  font-size: 1rem;
+}
+.addressForm {
+  width: 100%;
+}
+.addressForm input {
+  width: 60%;
+}
+.city input,
+.fName input,
+.lName input,
+.addressForm input,
+.zipCode input {
+  margin-left: 5px;
+}
+
+.zipCode input {
+  width: 40%;
+}
+.city input,
+.fName input,
+.lName input {
+  width: 55%;
+}
+
+/* Position player// Uniform form */
+.playerPosition label,
+.uniformSize label {
+  margin-right: 10px;
+}
+
+/* Permission play form */
+.permissionPlay p {
+  margin-bottom: 10px;
+}
+.permissionPlay label {
+  margin-right: 20px;
+}
+/* Button submit */
+button{
+  width: 130px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+transition: all 0.6s;
+}
 /*Photo bottom section*/
 .containerPhotos {
   margin-top: 5rem;
-  
+
   padding: 10px;
   text-align: center;
   background-color: rgba(216, 192, 114, 0.733);
-  box-shadow: -3px 5px 20px 0px 
-  rgba(255, 166, 0, 0.534);
+  box-shadow: -3px 5px 20px 0px rgba(255, 166, 0, 0.534);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
 .figureB {
-  
   padding: 10px;
   width: 25%;
 }
@@ -284,4 +390,24 @@ a:hover {
 }
 .figureB:hover {
   transform: scale(1.5);
+}
+input:hover {
+  background-color: var(--cream);
+  color: var(--black);
+}
+select:hover {
+  background-color: var(--cream);
+  color: var(--black);
+}
+button:hover {
+  background-color:var(--orange);
+  color: var(--lightcream);
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+.radioOn:hover {
+  background-color: var(--orange);
+  color: var(--black);
+  border-radius: 7px;
+
 }
